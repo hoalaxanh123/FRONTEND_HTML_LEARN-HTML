@@ -1,0 +1,304 @@
+﻿body {
+    margin: 0px;
+    background: url(../Images/background4.jpg) no-repeat fixed center;
+    background-size: 100% 100%;
+    color: white;
+    font-family: 'Alegreya', serif;
+}
+
+
+.Content {
+    margin: 30px auto;
+    width: 980px;
+    font-size: 16px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    padding: 0px;
+}
+
+.Header {
+    margin: 0 0 0 0;
+    height: 80px;
+    width: 980px;
+    border: 1px dashed silver;
+    float: left;
+    font-size: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+    .Header #Logo {
+        height: 80px;
+        width: 250px;
+        background: red;
+        float: left;
+        border-radius: 20px 0px 0 20px;
+        text-align:center;
+    }
+
+    .Header #Menu {
+        height: 80px;
+        width: 400px;
+        float: left;
+        margin: 0 0 0 00px;
+    }
+
+    .Header #Search1 {
+        height: 25px;
+        width: 220px;
+        float: left;
+        margin: 20px 0 0 80px;
+    }
+
+    .Header input[type=submit] {
+        height: 20px;
+        width: 30px;
+        margin: 25px 0 0 -40px;
+        float: left;
+        background: url(../Images/search.png) no-repeat center center;
+        background-size: 100% 100%;
+    }
+
+    .Header #Block {
+        height: 80px;
+        width: 100px;
+        margin: 0px 0 0 0px;
+        float: left;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+        .Header #Block a {
+            float: left;
+            text-decoration: none;
+            color: white;
+            padding-top: 25px;
+            width: 100%;
+            font-weight: 100;
+            text-align: center;
+        }
+
+.Content2 {
+    margin: 20px 0 0 0;
+    height: 980px;
+    width: 980px;
+    border: 1px dashed silver;
+    float: left;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+.Content1 {
+    width: 980px;
+    float: left;
+    margin: 30px auto;
+    height: 620px;
+    border: 1px dashed silver;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+}
+
+    .Content1 #About1 {
+        height: 500px;
+    }
+
+
+    .Content1 #GioiThieu {
+        width: 95%;
+        height: 455px;
+        float: left;
+        margin: 0 auto;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
+    }
+
+
+
+        .Content1 #GioiThieu #Avatar {
+            margin: 110px 0 0 40px;
+            height: 150px;
+            width: 140px;
+            background: url(../Images/avatar.jpg) no-repeat center center;
+            background-size: 100% 100%;
+            float: right;
+        }
+
+            .Content1 #GioiThieu #Avatar:hover {
+                opacity: 0;
+            }
+
+        .Content1 #GioiThieu #ThongTin {
+            margin: 20px 40px 0 0px;
+            height: 140px;
+            width: 680px;
+            float: left;
+        }
+
+        .Content1 #GioiThieu h1 {
+            margin: 10px 20px 20px 320px;
+            text-decoration: underline;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .Content1 #GioiThieu #ThongTin ul {
+            list-style: circle;
+        }
+
+            .Content1 #GioiThieu #ThongTin ul li {
+            }
+
+
+
+        .Content1 #GioiThieu a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+    .Content1 #LAB {
+        width: 820px;
+        height: 550px;
+        margin: 30px auto;
+        display: normal;
+    }
+
+        .Content1 #LAB a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        .Content1 #LAB #LAB_Block3 a, .Content1 #LAB #LAB_Block5 a {
+            font-size: 25px;
+        }
+
+        .Content1 #LAB #LAB_Block1, #LAB #LAB_Block2, #LAB #LAB_Block3, #LAB #LAB_Block4, #LAB #LAB_Block5, #LAB #LAB_Block6, #LAB #LAB_Block7, #LAB #LAB_Block8,
+        #LAB #LAB_Block9, #LAB #LAB_Block10, #LAB #LAB_Block11 {
+            width: 220px;
+            height: 100px;
+            border: 1px solid silver;
+            margin-left: 40px;
+            float: left;
+            margin-top: 20px;
+        }
+
+
+        .Content1 #LAB h1 {
+            text-align: center;
+        }
+
+.Chu {
+    position: absolute; /*Gan vi tri tuyet doi*/
+    /*bottom: 100%;*/
+    width: 0px;
+    height: 99px;
+    color: yellow;
+    text-align: center;
+    opacity: 1;
+    float: left;
+    background: red;
+    overflow: hidden;
+    /*width: 100%;
+            height: 100%;*/
+    transition: all 0.5s; /*Chuyen dong tat ca cac thuoc tinh -> mat 1 giay de thay doi tat ca thuoc tinh*/
+}
+
+    .Chu h4 {
+        color: red;
+    }
+
+#LAB_Block1:hover > .Chu, #LAB_Block2:hover > .Chu, #LAB_Block3:hover > .Chu, #LAB_Block4:hover > .Chu, #LAB_Block5:hover > .Chu, #LAB_Block6:hover > .Chu, #LAB_Block7:hover > .Chu, #LAB_Block8:hover > .Chu, #LAB_Block9:hover > .Chu, #LAB_Block10:hover > .Chu, #LAB_Block11:hover > .Chu {
+    opacity: 1;
+    width: 220px;
+    height: 99px;
+}
+
+
+.Footer {
+    margin: 0px 0 0 00px;
+    height: 30px;
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+/*Tuyết rơi lab 9*/
+.snowflake {
+    position: fixed;
+    color: #000000;
+}
+
+
+/*Code trượt lên xuống của thầy - LAB08*/
+.hvr-sweep-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-osx-font-smoothing: grayscale;
+    -o-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+    .hvr-sweep-to-bottom:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: silver;
+        -webkit-transform: scaleY(0);
+        -o-transform: scaleY(0);
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transition-property: transform;
+        -o-transition-property: transform;
+        -moz-transition-property: transform;
+        -ms-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -ms-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -ms-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+
+
+    .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
